@@ -1,0 +1,349 @@
+.tableItem {
+  &__formCard {
+    margin: 42px -24px 0 -24px !important;
+
+    @include respond-to("small") {
+      padding: 24px;
+    }
+
+    padding: 48px;
+  }
+
+  &__tableCol1 {
+    width: 125px;
+  }
+
+  &__header {
+    display: block;
+    padding: 16px 0;
+
+    @include respond-to("small") {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px !important;
+
+    @include respond-to("small") {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__tablerow {
+    height: 40px !important;
+
+    & td {
+      padding: 5px !important;
+    }
+
+    & th {
+      padding: 5px !important;
+    }
+  }
+
+  &__actionBtnHolder {
+    float: right;
+  }
+
+  &__actionBtn {
+    margin-left: 5px !important;
+    margin-bottom: 5px !important;
+
+    @include respond-to("small") {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__field {
+    position: absolute;
+    border-radius: 100px !important;
+  }
+
+  &__filterBtn {
+    border-radius: 100px !important;
+  }
+
+  &__searchBtn {
+    border-radius: 100px !important;
+  }
+
+  &__actionCol {
+    width: 15% !important;
+  }
+}
+
+.orgHierachy-lvlConfigList__actionBtnHolder {
+  justify-content: end;
+}
+
+.MuiTableCell-root {
+  padding-top: 8px ;
+  padding-bottom: 8px ;
+
+  &:first-child {
+    padding-left: 20px !important;
+  }
+
+  &:last-child {
+    padding-right: 20px !important;
+    text-align: end;
+  }
+}
+
+.componentTable {
+  .MuiPaper-root {
+    .MuiCardContent-root {
+      .MuiTableContainer-root {
+        .MuiTable-root {
+          border: 1px solid $aircraft-white;
+
+          .MuiTableHead-root {
+            height: 40px;
+            border-bottom: 1px solid $aircraft-white;
+
+            .MuiTableRow-root {
+              height: 40px;
+
+              .MuiTableCell-root {
+                height: 40px;
+
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                border: unset !important;
+
+                .MuiButtonBase-root {
+                  .MuiTypography-root {
+                    font-size: 12px;
+                    color: $subtletext-color;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+          }
+
+          .MuiTableBody-root {
+            .MuiTableRow-root {
+              border-bottom: 1px solid $aircraft-white;
+
+              .MuiTableCell-root {
+                height: 48px;
+
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                border: unset !important;
+                font-size: 14px;
+                font-weight: 400;
+                color: $text-color;
+              }
+            }
+          }
+        }
+      }
+
+      .MuiTablePagination-root {
+        border-bottom: 1px solid $aircraft-white;
+        border-left: 1px solid $aircraft-white;
+        border-right: 1px solid $aircraft-white;
+        height: 40px;
+        overflow: hidden;
+
+        .MuiToolbar-root {
+          height: 40px;
+          min-height: 40px !important;
+
+          .MuiTypography-root {
+            font-weight: 600;
+            font-size: 14px;
+          }
+
+          .MuiInputBase-root {
+            .MuiSelect-root {
+              font-weight: 600;
+              font-size: 14px;
+            }
+          }
+
+          .MuiTablePagination-actions {
+            .MuiButtonBase-root {
+              .MuiIconButton-label {
+                .MuiSvgIcon-root {
+                  color: $login-header-text-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.MuiTableBody-root {
+  .Uui-table__row {
+    .MuiTableCell-body:nth-child(4) {
+      color: $subtletext-color !important;
+    }
+  }
+}
+
+.table_heading {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  padding: 32px 16px 0 16px;
+  color: $primary-color;
+}
+
+.MuiCardContent-root {
+  .MuiTableContainer-root {
+    .MuiTable-root {
+      .MuiTableHead-root {
+        .Uui-table__row {
+          .MuiTableCell-root:nth-child(3) {
+            padding-left: 44px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.MuiCardContent-root {
+  .MuiTable-root {
+    .MuiTableBody-root {
+      .Uui-table__row {
+        .MuiTableCell-root:nth-child(3) {
+          padding-left: 58px;
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////bacic Table//////////////////////////////
+
+.tableHeading {
+  font-size: 12px !important;
+  color: $subtletext-color !important;
+  font-weight: 600 !important;
+}
+
+.expected_value {
+  text-align: end !important;
+}
+
+.statusHead {
+  text-align: left !important;
+}
+
+.css-rqglhn-MuiTable-root {
+  .tabelcontainer__tablebody {
+    .Uui-table__row {
+      .MuiTableCell-body:nth-child(3) {
+        text-align: end !important;
+      }
+    }
+  }
+}
+
+.table {
+  padding-left: 24px;
+}
+
+.table_content {
+  .formCard__body {
+    .MuiPaper-elevation {
+      padding: 20px;
+    }
+  }
+}
+
+//////////////////////////////////////////Collapsable Table////////////////////////////////////////////////
+
+
+.collapsTableSpacing{
+padding: 16px;
+}
+
+.collapsTable {
+  .MuiPaper-elevation {
+    .MuiTable-root {
+      .MuiTableHead-root {
+        .MuiTableRow-root {
+          .MuiTableCell-root {
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            color: $subtletext-color !important;
+            padding: 8px 16px !important;
+            border-bottom-color: $aircraft-white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.collapsTable {
+  .MuiPaper-root {
+    padding: 0 !important;
+    box-shadow: none !important;
+    .MuiTable-root {
+      border: 1px solid $aircraft-white;
+
+      .MuiTableBody-root {
+        .MuiTableRow-root {
+          .MuiTableCell-root{
+            .MuiCollapse-root{
+              .MuiCollapse-wrapper{
+                .css-9l5vo-MuiCollapse-wrapperInner{
+                  padding-bottom: 16px;
+                  .MuiBox-root{
+                      .css-rqglhn-MuiTable-root{
+                        .MuiTableBody-root{
+                            .css-1q1u3t4-MuiTableRow-root{
+                              .css-dv0mq-MuiTableCell-root{
+                                border-bottom-color:$aircraft-white !important ;
+                              }
+                              .css-dsuxgy-MuiTableCell-root{
+                                border-bottom-color:$aircraft-white !important ;
+                                
+                              }
+                            }
+                        }
+                      }
+                  }
+                }
+              }
+            }
+          }
+          .css-2blr9s-MuiTableRow-root {
+            display: table-row;
+            border: 1px solid $aircraft-white !important;
+          }
+
+          .css-177gid-MuiTableCell-root {
+            border-bottom: none !important;
+          }
+          .css-1ex1afd-MuiTableCell-root{
+            padding: 0 16px !important;
+            border-bottom-color: $aircraft-white !important;
+          }
+          
+        }
+      }
+    }
+  }
+  .MuiTablePagination-root {
+    .MuiToolbar-root {
+      border-left: 1px solid $aircraft-white;
+      border-right: 1px solid $aircraft-white;
+      border-bottom: 1px solid $aircraft-white;
+      height: 40px ;
+      min-height: 40px !important;
+    }
+}
+}

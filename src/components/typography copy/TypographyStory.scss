@@ -1,0 +1,26 @@
+
+.typography {
+  display: grid;
+  margin-bottom: 32px;
+  grid-template-columns: 0.5fr 1fr;
+
+  /* Props */
+  &__props {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+
+    /* Item */
+    &__item {
+      &:not(:last-of-type) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  /* Label */
+  &__label {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+}

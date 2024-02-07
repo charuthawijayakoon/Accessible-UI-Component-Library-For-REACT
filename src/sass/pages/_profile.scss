@@ -1,0 +1,205 @@
+.profileContent {
+  width: 100%;
+  background-color: $white-color;
+  padding-top: 36px;
+
+  &__box {
+    &--tabLable {
+      color: $black-color;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    &--mainHheading {
+      color: #000;
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    &--userCard {
+      width: 100%;
+      height: 111px;
+      border-radius: 10px;
+      border: 1px solid $light-color-gray;
+      margin-top: 42px;
+
+      &_imgFlex {
+        display: flex;
+        align-items: center;
+        padding: 12px 18px;
+        gap: 28px;
+
+        &-activCardFlex {
+          display: flex;
+          gap: 16px;
+        }
+      }
+    }
+  }
+}
+.tabDetails {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid $light-color-gray;
+  background: $white-color;
+  margin-top: 36px;
+
+  &__mainHeading {
+    color: $black-color;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 28px;
+  }
+
+  &__profileSignatureContect {
+    border-radius: 10px;
+    border: 1px solid $light-color-gray;
+    background: $white-color;
+    margin-top: 36px;
+    width: 100%;
+
+    &--signatureBox{
+      border-radius: 4px;
+      padding: 12px;
+      border: 1px dashed $subtletext-color;
+      background: $white-color;
+      width: 288px;
+      height: 164px;
+    }
+
+    &--profileSignature {
+      margin-bottom: 40px;
+
+      &_text {
+        color: $black-color;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__mainGridContent {
+    padding: 0 0 28px 8px;
+
+    &--mainText {
+      color: $sheade-color-gray;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &--sudText {
+      color: $dark-color;
+      font-size: 18px !important;
+      font-weight: 500 !important;
+    }
+
+    &--contactChip {
+      border-radius: 15px;
+      background-color: $shade-color;
+      width: 139px;
+      height: 24px;
+
+      &_chipText {
+        color: $primary-color;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        padding: 3px 11px;
+      }
+    }
+  }
+}
+
+.profileContent__box {
+  .MuiTabs-indicator {
+    height: 0 !important;
+  }
+}
+
+.profileContent__box {
+  .MuiTabs-flexContainer {
+    flex-direction: column !important;
+  }
+}
+
+.profileContent__box {
+  .profileContent__box--tabLable {
+    max-width: 181px !important;
+  }
+}
+
+.profileContent__box {
+  .MuiTab-textColorPrimary.Mui-selected {
+    color: $light-color-blue !important;
+    border-radius: 30px;
+    background-color: $sky-blue-color;
+  }
+}
+
+.profileContent__box {
+  .PrivateTabIndicator-root-1 {
+    height: 0 !important;
+  }
+}
+
+.profileContent__box {
+  .MuiTab-textColorPrimary {
+    color: $gray-color-dark !important;
+    border-radius: 30px;
+    background: $shade-white-color;
+    margin-bottom: 28px;
+  }
+}
+
+
+.uoi_profile_name {
+  color: $dark-color;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.uoi_profile_discription {
+  color: $gray-color;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.uoi__profile_active_chip {
+  width: 64px;
+  height: 32px;
+  border-radius: 25px;
+  background: #d5f9e3;
+  margin: -8px;
+}
+
+.chip_text {
+  color: $dark-color-green;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 9px 11px;
+}
+
+.uoi_name_discription_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+
+.divider_line {
+  background-color: $light-color-gray !important;
+  width: 1px;
+  height: 100%;
+  margin-left: 40px !important;
+}
+
+.tab_flex {
+  display: flex;
+  gap: 68px;
+}
+
+.contact_chip_flex {
+  display: flex;
+  gap: 50px;
+}

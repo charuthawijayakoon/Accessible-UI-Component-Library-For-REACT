@@ -1,0 +1,147 @@
+.userRole-Header {
+    &__navigationBar {
+      margin: 42px -24px 0 -24px !important;
+  
+      @include respond-to("small") {
+        padding: 15px 36px;
+      }
+  
+      padding: 48px;
+    }
+  
+    &__tabsLabelHolder {
+      display: flex;
+      gap: 5px;
+    }
+  
+    &__tabsLabel {
+      @include respond-to("small") {
+        font-size: 14px !important;
+      }
+  
+      color: $text-color;
+      font-size: 12px !important;
+      text-transform: none;
+    }
+  
+    &__tabPanel {
+      & > div {
+        @include respond-to("small") {
+          padding: 24px 0 0 0;
+        }
+  
+        padding: 24px 0 0 0;
+      }
+    }
+  }
+  
+  .userRole {
+    &__formCard {
+      margin: 42px -24px 0 -24px !important;
+  
+      @include respond-to("small") {
+        padding: 24px;
+      }
+  
+      padding: 48px;
+    }
+  
+    &__tableCol1 {
+      width: 125px;
+    }
+  
+    &__header {
+      display: block;
+      padding: 16px 0;
+  
+      @include respond-to("small") {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+      }
+    }
+  
+    &__title {
+      margin-bottom: 24px !important;
+  
+      @include respond-to("small") {
+        margin-bottom: 0 !important;
+      }
+    }
+  
+    &__tablerow {
+      height: 40px !important;
+  
+      & td {
+        padding: 5px !important;
+      }
+  
+      & th {
+        padding: 5px !important;
+      }
+    }
+  
+    &__actionBtnHolder {
+      float: right;
+    }
+  
+    &__actionBtn {
+      margin-left: 5px !important;
+      margin-bottom: 5px !important;
+  
+      @include respond-to("small") {
+        margin-bottom: 0 !important;
+      }
+    }
+  
+    &__field {
+      position: absolute;
+      border-radius: 100px !important;
+    }
+  
+    &__filterBtn {
+      border-radius: 100px !important;
+    }
+  
+    &__searchBtn {
+      border-radius: 100px !important;
+    }
+  }
+
+  // .actionBarWithSearch{
+  //   .Uui-txt-subtitle{
+  //     padding-bottom: 20px;
+  //   } 
+  // }
+  
+  .breadcrums_buttonFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .breadcumb_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .searchWrapper{
+    display: flex !important;
+    align-items: center !important;
+    &__BtnWrapper{
+      display: flex;
+      gap: 16px;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+  }
+
+  .actionTop__btn{
+    .buttonSelect{
+      .MuiButtonBase-root{
+        padding: 5px 8px;
+      }
+    }
+  }

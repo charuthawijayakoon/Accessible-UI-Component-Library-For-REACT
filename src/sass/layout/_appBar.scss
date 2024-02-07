@@ -1,0 +1,33 @@
+.mainHeading{
+    color:  $subtletext-color !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+.appDrawer{
+
+    &__iconlistMenu {
+        align-items: center !important;
+    }
+
+    &__icon-buttons{
+        display: flex !important;
+        align-items: center !important;
+        gap: 24px !important;
+
+    }
+
+}
+
+
+.appBarContent{
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: space-between !important;
+
+    &__MenuFlex{
+        display: flex !important;
+        align-items: center !important; 
+    }
+}
+

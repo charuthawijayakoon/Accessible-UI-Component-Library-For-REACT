@@ -1,0 +1,44 @@
+.content {
+    &__commentBar {
+        background: white;
+        height: 100%;
+    }
+
+    &__container{
+        padding: 24px 0;
+        min-height: calc(100vh - 264px);
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        margin: 42px -24px 0 -24px !important;
+        @include respond-to("small") {
+            padding: 24px;
+        }
+        padding: 48px;
+    }
+
+    &__stepperIcon{
+       color: $subtletext-color !important;
+    
+        &--active{
+            color: $primary-color !important;
+        }
+    }
+
+    &__table{
+
+        max-width: 1000px;
+        overflow-x: scroll;
+
+        &--grid{
+            min-width: 766px;
+        }
+
+        & > div{
+            margin-bottom: 24px;
+        }
+    }
+
+}

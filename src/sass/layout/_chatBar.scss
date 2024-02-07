@@ -1,0 +1,17 @@
+.chatbar {
+    &__iconHolder {
+        @include respond-to("small") {
+            height: 65px;
+        }
+        height: 56px;
+        border-bottom: 1px solid $shade-color;
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

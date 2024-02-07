@@ -1,0 +1,54 @@
+.navigationBar{
+    box-sizing: border-box;
+    height: 135px;
+    background-color: #fff;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & nav{
+        margin-bottom: 5px;
+    }
+}
+
+.navigationBarWithSearch{
+    box-sizing: border-box;
+    height: 180px;
+    background-color: #fff;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigationBarWithTitle{
+    height: 120px;
+}
+
+.actionTop {
+    margin-top: 40px;
+    &__btn {
+        display: flex;
+        &--second {
+            margin-left: 12px;
+            button {
+                height: 34.5px;
+            }
+        }
+    }
+}
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    &__Bar {
+        flex: 0 0 90%;
+    }
+
+    &__BtnWrapper {
+        flex: 0 0 10%;
+    }
+}

@@ -1,0 +1,223 @@
+.Uui-msgbox {
+    position: relative !important;
+    min-width: 320px;
+
+    &__closeIcon{
+        position: absolute !important;
+        top: 10px !important;
+        right: 16px !important;
+        color: white !important;
+    }
+
+
+    &--warning {
+        background-color: #FFA630 !important;
+    }
+
+    &--error {
+        background-color: #BB342F !important;
+    }
+
+    &--success {
+        // border-left: 5px solid $success-color;
+        background-color: #2e7d32 !important;
+    }
+
+    &--info {
+        background-color: #2D4190 !important;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__icon {
+        font-size: 24px !important;
+
+        &--warning {
+            color: white !important;
+        }
+
+        &--error {
+            color: white !important;
+        }
+
+        &--success {
+            color: white !important;
+        }
+
+        &--info {
+        }
+    }
+}
+
+// .alert-msg {
+//     min-width: 400px;
+//     background-color: white;
+//     border-radius: 8px;
+//     box-shadow:rgba(129, 128, 128, 0.25);
+//     padding: 20px 4px;
+//     height: 195px;
+//     &__icon {
+//         text-align: center;
+//         margin-bottom: 0px;
+//         svg {
+//             font-size: 36px;
+//             color: #2E7D32;
+//         }
+//     }
+//     &__errorIcon {
+//         text-align: center;
+//         margin-bottom: 0px;
+//         svg {
+//             font-size: 36px;
+//             color: #BB342F;
+//         }
+//     }
+//     &__warningIcon {
+//         text-align: center;
+//         margin-bottom: 0px;
+//         svg {
+//             font-size: 36px;
+//             color: #FFA630;
+//         }
+//     }
+
+//     &__infoIcon {
+//         text-align: center;
+//         margin-bottom: 0px;
+//         svg {
+//             font-size: 36px;
+//             color: #2D4190;
+//         }
+//     }
+//     &__title {
+//         text-align: center;
+//         margin-bottom: 12px;
+//         h6 {
+//             font-size: 22px;
+//             font-weight: 600;
+//         }
+//         p {
+//             font-size: 24px;
+//             font-weight: 700;
+//             color: #2E7D32;
+//         }
+//     }
+//     &__errorTitle {
+//         text-align: center;
+//         margin-bottom: 12px;
+//         h6 {
+//             font-size: 22px;
+//             font-weight: 600;
+//         }
+//         p {
+//             font-size: 24px;
+//             font-weight: 700;
+//             color: #BB342F;
+//         }
+//     }
+//     &__warningTitle {
+//         text-align: center;
+//         margin-bottom: 12px;
+//         h6 {
+//             font-size: 22px;
+//             font-weight: 600;
+//         }
+//         p {
+//             font-size: 24px;
+//             font-weight: 700;
+//             color: #FFA630;
+//         }
+//     }
+//     &__infoTitle {
+//         text-align: center;
+//         margin-bottom: 12px;
+//         h6 {
+//             font-size: 22px;
+//             font-weight: 600;
+//         }
+//         p {
+//             font-size: 24px;
+//             font-weight: 700;
+//             color: #2D4190;
+//         }
+//     }
+//     &__body {
+//         text-align: center;
+//         color: #545454;
+//         p {
+//             color: #272525;
+//             font-size: 16px;
+//         }
+//     }
+//     &__btn {
+//         padding-top: 15px !important;
+//         align-self: center;
+//         justify-content: center;
+//         display: flex;
+//         button {
+//             width: 100px;
+//         }
+//     }
+// }
+
+// .Uui-snack-subTitle {
+//     color: white;
+//     font-size: 14px !important;
+// }
+
+// .messageBoxAlert {
+//     background-color: #EDEDED;
+//     padding: 16px 16px;
+// }
+
+// .messageBoxSecondaryBtn {
+//     border: 1px solid #2E7D32 !important;
+//     width: 100px;
+//     color: #2E7D32 !important;
+// }
+
+// .messageBoxPrimaryBtn {
+//     background-color: #2E7D32 !important;
+//     color: white !important;
+//     margin-left: 16px !important;
+// }
+
+// .messageBoxErrorSecondaryBtn {
+//     border: 1px solid #BB342F !important;
+//     width: 100px;
+//     color: #BB342F !important;
+// }
+
+// .messageBoxErrorPrimaryBtn {
+//     background-color: #BB342F !important;
+//     color: white !important;
+//     margin-left: 16px !important;
+// }
+
+// .messageBoxwarningSecondaryBtn {
+//     border: 1px solid #FFA630 !important;
+//     width: 100px;
+//     color: #FFA630 !important;
+// }
+
+// .messageBoxwarningPrimaryBtn {
+//     background-color: #FFA630 !important;
+//     color: white !important;
+//     margin-left: 16px !important;
+// }
+
+// .messageBoxinfoSecondaryBtn {
+//     border: 1px solid #2D4190 !important;
+//     width: 100px;
+//     color: #FFA630 !important;
+// }
+
+// .messageBoxinfoPrimaryBtn {
+//     background-color: #2D4190 !important;
+//     color: white !important;
+//     margin-left: 16px !important;
+// }

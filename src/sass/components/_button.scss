@@ -1,0 +1,286 @@
+.Uui-btn--primary {
+  background: $primary-color !important;
+  color: $white-color !important;
+
+  &:hover {
+    background: $primary-color-dark !important;
+  }
+}
+
+.Uui-btn--lightPrimary {
+  background: $tertiary-color !important;
+  color: $primary-color !important;
+
+  &:hover {
+    background-color: $smoke-color !important;
+  }
+}
+
+.Uui-btn--primary-dark {
+  background: $primary-color-dark !important;
+  color: $white-color !important;
+}
+
+.Uui-btn--secondary {
+  background-color: $smoke-color !important;
+  color: $primary-color !important;
+  box-shadow: unset !important;
+ 
+}
+
+.Uui-btn--secondary:hover {
+  background-color: $shade-color !important;
+  color: $primary-color !important;
+}
+
+.Uui-btn--tertiary {
+  background-color: $tertiary-color !important;
+  color: $primary-color !important;
+}
+
+.Uui-btn--tertiary:hover {
+  background-color: $tertiary-dark-color !important;
+  color: $primary-color !important;
+}
+
+.Uui-btn--disabled {
+  background-color: $smoke-color !important;
+  color: $subtletext-color !important;
+}
+
+.Uui-btn-outlined--white {
+  color: $shade-color !important;
+
+  & svg {
+    color: $subtletext-color !important;
+  }
+}
+
+.Uui-btn-outlined--primary {
+  // color: $shade-color !important;
+  color: $primary-color;
+
+  & svg {
+    color: $primary-color !important;
+  }
+}
+
+.Uui-btn-outlined--error {
+  color: $error-color !important;
+
+  & svg {
+    color: $error-color !important;
+  }
+}
+
+.Uui-btn-outlined--success {
+  color: $success-color !important;
+
+  & svg {
+    color: $success-color !important;
+  }
+}
+
+.Uui-btn-light {
+  background: $smoke-color !important;
+
+  & svg {
+    color: $subtletext-color !important;
+  }
+
+  &:hover {
+    & svg {
+      color: $primary-color !important;
+    }
+  }
+}
+
+.Uui-btn--transparent-primary {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: $primary-color !important;
+}
+
+.Uui-iconbutton {
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  height: 36px !important;
+  min-width: 36px !important;
+
+  .MuiSvgIcon-root {
+    @include respond-to("large") {
+      font-size: 1.2rem;
+    }
+
+    @include respond-to("x-large") {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.Uui-roundedbutton {
+  box-sizing: border-box !important;
+  padding: 16px !important;
+  height: 45px !important;
+  width: 100%;
+  border-radius: 30px !important;
+}
+
+.Uui-btn-error {
+  background-color: $smoke-color !important;
+  color: $error-color !important;
+}
+
+.Uui-link-btn:hover {
+  color: $primary-color;
+  background-color: unset !important;
+  text-decoration: underline !important;
+  box-shadow: none;
+}
+
+.Uui-link-btn {
+  color: $primary-color !important;
+  background-color: unset !important;
+  box-shadow: unset !important;
+
+  &--underline {
+    button {
+      display: flex;
+      text-underline-offset: 5px;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: 1.5px;
+    }
+  }
+}
+
+.tableItemIcons {
+  border: none !important;
+  // background-color: #F9F9F9 !important;
+
+  .MuiButton-label {
+    .MuiSvgIcon-root {
+      color: $weathered-stone-color !important;
+    }
+  }
+}
+
+.tableItemIcons:hover {
+  background-color: $cotton-boll-color !important;
+
+  .MuiButton-label {
+    .MuiSvgIcon-root {
+      color: $weathered-stone-color !important;
+    }
+  }
+}
+
+.iconbutton {
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    padding: 2px 16px !important;
+  }
+}
+
+/////////////////////////////////////////////Save & CONTINUE//////////////////////////////
+
+.buttonText {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+.SaveContinueBtn {
+  background-color: $klimt-green-color !important ;
+  box-shadow: none !important ;
+}
+
+.saveButton {
+  .MuiButton-root {
+    padding: 0px 16px !important;
+  }
+}
+
+.saveBtn {
+  .SaveContinueBtn {
+    padding: 1px 16px !important;
+  }
+}
+
+.iconButton {
+  color: $klimt-green-color !important ;
+  border: 1px solid $klimt-green-color !important;
+  padding: 1px 12px !important;
+}
+
+.iconButton {
+  .css-ahj2mt-MuiTypography-root {
+    font-size: 15px !important;
+  }
+}
+
+.printBtn {
+  padding: 1px 16px !important;
+}
+
+.iconbutton {
+  .Uui-btn--primary {
+    .MuiButton-startIcon {
+      margin-left: -4px !important;
+    }
+  }
+}
+
+.primaryBtnFinsh {
+  padding: 1px 16px !important;
+  color: $white-color !important;
+  box-shadow: none !important;
+}
+
+.PrimaryText {
+  font-weight: 700 !important;
+}
+
+.PrimaryButtonBack {
+  padding: 0 16px !important;
+  color: $primary-color !important ;
+  border: 1px solid $primary-color !important;
+}
+
+.textSize {
+  font-size: 15px !important;
+}
+
+.textButton {
+  &__icon {
+    background-color: $shade-color;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: $primary-color;
+  }
+  &__icon:hover {
+    background-color: $tertiary-color;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: $primary-color-dark;
+    cursor: pointer;
+  }
+}
+
+.DropdownBotton {
+  &__icon {
+    background-color: $primary-color;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: $white-color;
+  }
+  &__icon:hover {
+    background-color: $primary-color;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: $white-color;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}

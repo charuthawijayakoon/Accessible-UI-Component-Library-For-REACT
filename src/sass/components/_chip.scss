@@ -1,0 +1,30 @@
+.Uui-chip--primary {
+    background-color: $primary-color !important;
+}
+
+.Uui-chip--secondary {
+    background-color: $smoke-color !important;
+    color: $primary-color !important;
+}
+
+.Uui-chip--barossa {
+    background-color: $barossa-color !important;
+    color: $white-color !important;
+}
+
+.Uui-chip--danger {
+    background-color: $error-color !important;
+    color: $white-color !important;
+}
+
+.Uui-chip--success {
+    background-color: $success-color !important;
+    color: $white-color !important;
+}
+
+.checked{
+    background-color: $primary-color-dark;
+}
+.unchecked{
+    background-color:$white-color ;
+}

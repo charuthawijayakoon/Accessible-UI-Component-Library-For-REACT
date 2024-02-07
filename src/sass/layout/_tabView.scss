@@ -1,0 +1,30 @@
+.UuiTab{
+    
+    &__tabsLabelHolder {
+        margin: 0 -24px 0 -24px !important;
+        background-color: white;
+        @include respond-to("small") {
+            padding:5px 40px 5px 40px;
+        }
+        padding: 15px 45px 15px 45px;
+    }
+
+    &__tabsLabel {
+        @include respond-to("small") {
+            font-size: 14px !important;
+        }
+        color: $text-color;
+        font-size: 12px !important;
+        text-transform: none;
+    }
+
+    &__tabPanel{
+
+            &>div{
+                @include respond-to("small") {
+                    padding: 24px 0 0 0;
+                }
+                padding: 24px 0 0 0;
+            }
+    }
+}

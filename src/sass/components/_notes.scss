@@ -1,0 +1,58 @@
+.notes {
+    &__create {
+        margin-bottom: 24px;
+
+        &__container {
+            display: flex;
+            gap: 16px;
+        }
+
+        &__buttonRow {
+            text-align: right !important;
+        }
+    }
+
+    &__view {
+        margin-bottom: 24px;
+
+        &__container {
+            display: flex;
+            gap: 16px;
+        }
+
+        &__item{
+            &__profile {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 12px;
+            }
+
+            &__desc{
+                margin-bottom: 12px;
+            }
+    
+        }
+
+      
+        &__buttonRow {
+          display: flex;
+           & button{
+               margin-right: 8px;
+           }
+        }
+    }
+
+    &__list{
+
+        max-height: 300px;
+        overflow-y: scroll;
+
+        & > div{
+            margin-bottom: 24px;
+        }
+    }
+
+    &__search{
+        margin: 24px 0;
+    }
+}

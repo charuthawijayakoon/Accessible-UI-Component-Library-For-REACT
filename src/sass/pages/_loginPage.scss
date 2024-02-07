@@ -1,0 +1,693 @@
+body {
+  margin: auto;
+  overflow: auto;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  background-color: $white-shade-gray;
+}
+
+@keyframes gradient-login {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.login_image {
+  width: 100%;
+  height: 100vh;
+
+  img {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    filter: grayscale(20%);
+  }
+}
+
+$bubble-count: 50;
+$sway-type: "sway-left-to-right", "sway-right-to-left";
+
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+@function sample($list) {
+  @return nth($list, random(length($list)));
+}
+
+.bubble {
+  @for $i from 0 through $bubble-count {
+    &:nth-child(#{$i}) {
+      --bubble-left-offset: #{random_range(0vw, 100vw)};
+      --bubble-radius: #{random_range(1vw, 10vw)};
+      --bubble-float-duration: #{random_range(6s, 12s)};
+      --bubble-sway-duration: #{random_range(4s, 6s)};
+      --bubble-float-delay: #{random_range(0s, 4s)};
+      --bubble-sway-delay: #{random_range(0s, 4s)};
+      --bubble-sway-type: #{sample($sway-type)};
+    }
+  }
+}
+
+@keyframes float-up {
+  to {
+    transform: translateY(-175vh);
+  }
+}
+
+@keyframes sway-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes sway-right-to-left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.fade-in-login {
+  animation: fadeIn-l ease 150ms;
+  -webkit-animation: fadeIn ease 150ms;
+  -moz-animation: fadeIn ease 150ms;
+  -o-animation: fadeIn ease 150ms;
+  -ms-animation: fadeIn ease 150ms;
+}
+@keyframes fadeIn-l {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $text-fill-color;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px hsla(0, 0%, 100%, 0.161);
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loginFormContainer__logoHolder {
+  margin-top: 20px;
+}
+
+///////////////////////////////////////////new sass////////////////////////////////////////////////////
+
+.passwordInput {
+  margin-bottom: 8px !important;
+  .css-r47a1p-MuiFormControl-root {
+    margin: 0 !important;
+    .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+      bottom: 27px;
+      top: auto !important;
+    }
+    .MuiInputBase-root {
+      .MuiInputBase-input {
+        padding: 8.5px 14px !important;
+      }
+    }
+  }
+}
+
+.passwordInput {
+  .MuiInputBase-root {
+    .MuiIconButton-root {
+      .MuiSvgIcon-root {
+        width: 18px !important;
+        height: 18px !important;
+      }
+    }
+  }
+}
+
+.passwordInput {
+  .MuiFormControl-root {
+    .MuiOutlinedInput-root {
+      padding-right: 28px !important;
+    }
+  }
+}
+
+.loginContainer__column {
+  .info-txt-small-login {
+    font-size: 12px !important;
+    font-weight: 300;
+    color: $primary-color;
+  }
+}
+
+.linkBtn {
+  text-decoration: none !important;
+}
+
+.loginFormContainer__navContainer .MuiFormControlLabel-root {
+  margin-left: -5px !important;
+}
+
+.checkIcon {
+  color: $primary-color !important;
+}
+
+.ripple-background {
+  height: 100%;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: $loging-bubbls-color;
+  animation: ripple 15s infinite;
+  z-index: 1;
+}
+
+.small {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: -100px;
+  bottom: -100px;
+}
+.medium {
+  width: 400px;
+  height: 400px;
+  right: -200px;
+  bottom: -200px;
+}
+.large {
+  width: 600px;
+  height: 600px;
+  right: -300px;
+  bottom: -300px;
+}
+.xlarge {
+  width: 800px;
+  height: 800px;
+  right: -400px;
+  bottom: -400px;
+}
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+  right: -500px;
+  bottom: -500px;
+}
+
+.shade1 {
+  opacity: 0.1;
+}
+.shade2 {
+  opacity: 0.2;
+}
+.shade3 {
+  opacity: 0.3;
+}
+.shade4 {
+  opacity: 0.4;
+}
+.shade5 {
+  opacity: 0.5;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.4);
+  }
+}
+
+.loginFormContainer__logo {
+  width: 36px !important;
+}
+
+.login_image {
+  width: 100%;
+  height: 100%;
+
+  img {
+    // position: absolute;
+    bottom: 0px;
+    width: 100%;
+    // filter: grayscale(20%);
+  }
+}
+.loginPageImage img {
+  object-fit: cover;
+  height: 500px;
+  object-position: -110px 10%;
+}
+
+.loginContainer {
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 810px;
+  max-height: 500px;
+  position: absolute;
+  border-radius: 8px;
+  padding: 36px;
+  background-color: $white-color;
+}
+
+.loginFormContainer__navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login_image {
+  width: 100%;
+  height: 100vh;
+
+  img {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    filter: grayscale(20%);
+  }
+}
+
+.loginContainer__column--right {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  display: none;
+}
+.loginContainer__column {
+  height: 100%;
+}
+
+.loginFormContainer__titleHolder p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.loginContainer {
+  @include respond-to("large") {
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    max-height: 600px;
+    position: absolute;
+  }
+  @include respond-to("x-large") {
+    max-width: 1000px;
+    max-height: 768px;
+  }
+
+  & .remember-me .MuiFormControl-fullWidth {
+    width: inherit !important;
+  }
+
+  &__column {
+    &--right {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0;
+      display: none;
+      @include respond-to("medium") {
+        display: block;
+        border-radius: 8px 8px 16px 16px;
+      }
+    }
+  }
+  .hederSpacing {
+    margin-bottom: 16px !important;
+  }
+
+  &__footerHolder {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.loginFormContainer__formBody {
+  margin-bottom: 56px;
+  width: 85%;
+}
+
+.loginHeaderBottom {
+  margin-bottom: 8px !important;
+}
+
+.loginFormInput {
+  .MuiFormLabel-root {
+    font-size: 14px !important;
+  }
+}
+
+.loginFormInput {
+  margin-bottom: 25px !important;
+  .MuiFormControl-root {
+    .MuiInputBase-root {
+      border-radius: 25px;
+      .MuiInputBase-input {
+        height: 24px;
+      }
+      fieldset {
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  left: var(--bubble-left-offset);
+  bottom: -75%;
+  display: block;
+  width: var(--bubble-radius);
+  height: var(--bubble-radius);
+  border-radius: 50%;
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay)
+    ease-in infinite;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $bubbles-backgroun-color;
+    border-radius: inherit;
+    animation: var(--bubble-sway-type) var(--bubble-sway-duration)
+      var(--bubble-sway-delay) ease-in-out alternate infinite;
+  }
+
+  @for $i from 0 through $bubble-count {
+    &:nth-child(#{$i}) {
+      --bubble-left-offset: #{random_range(1vw, 100vw)};
+      --bubble-radius: #{random_range(1vw, 10vw)};
+      --bubble-float-duration: #{random_range(18s, 40s)};
+      --bubble-sway-duration: #{random_range(4s, 6s)};
+      --bubble-float-delay: #{random_range(0s, 4s)};
+      --bubble-sway-delay: #{random_range(0s, 4s)};
+      --bubble-sway-type: #{sample($sway-type)};
+    }
+  }
+}
+
+@keyframes float-up {
+  to {
+    transform: translateY(-175vh);
+  }
+}
+
+@keyframes sway-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes sway-right-to-left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.loginPage {
+  @include respond-to("large") {
+    height: 100vh;
+    position: relative;
+  }
+
+  overflow: hidden;
+  background: linear-gradient(135deg, $white-color, $gradient-color-loging);
+}
+
+.loginRightText {
+  padding: 2px 12px;
+  margin-bottom: 0 !important;
+  font-size: 23px !important;
+  font-weight: 700;
+}
+
+/////////////////////////////////////////////forgotPassword sass////////////////////////////////////////
+
+.loginContainerforget {
+  @include respond-to("large") {
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    max-height: 500px;
+    position: absolute;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(96, 91, 91, 0.2509803922);
+    // box-shadow: 0px 1px 11px 2px rgba(37,38,37,0.36);
+    box-shadow: 0px 2px 2px 0px rgba(96, 91, 91, 0.2509803922);
+    border-radius: 8px;
+    padding: 36px;
+    background-color: $white-color;
+  }
+  @include respond-to("x-large") {
+    max-width: 800px;
+    max-height: 500px;
+  }
+  height: 100vh;
+  min-height: 500px;
+
+  & .remember-me .MuiFormControl-fullWidth {
+    width: inherit !important;
+  }
+
+  &__column {
+    height: 100%;
+
+    &--left {
+      background-color: $white-color;
+      position: relative;
+      border-radius: 0;
+      border-radius: none;
+      @include respond-to("medium") {
+        border-radius: 8px 0px 0px 8px;
+      }
+    }
+
+    &--right {
+      background-color: $primary-color;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0;
+      display: none;
+      @include respond-to("medium") {
+        display: block;
+        border-radius: 0px 8px 8px 0px;
+      }
+    }
+  }
+
+  &__titlebox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+    @include respond-to("small") {
+      width: 80%;
+    }
+
+    &__title {
+      margin-bottom: 24px !important;
+      line-height: 1 !important;
+    }
+  }
+
+  &__art {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &__art-reset {
+    width: 70%;
+    margin-bottom: 24px;
+  }
+
+  &__shape1 {
+    position: absolute;
+    width: 80%;
+    right: 0;
+  }
+
+  &__shape2 {
+    position: absolute;
+    width: 50%;
+    left: 5%;
+    bottom: 0;
+  }
+
+  &__footerHolder {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.loginInputField {
+  .MuiInputBase-root {
+    border-radius: 48px !important;
+  }
+}
+
+.loginFormContainer__logoHolder {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.back-roundedbutton {
+  color: $primary-color !important;
+  border: 1px solid $primary-color !important;
+}
+
+.Uui-roundedbutton {
+  box-sizing: border-box !important;
+  padding: 16px !important;
+  height: 45px !important;
+  width: 100%;
+  border-radius: 30px !important;
+}
+
+.loginInputField {
+  .MuiFormLabel-root {
+    font-size: 14px !important;
+  }
+}

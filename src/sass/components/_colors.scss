@@ -1,0 +1,299 @@
+.colorPalette {
+    display: flex;
+    padding: 24px 6px;
+
+    &__itemName {
+        flex: 0 0 30%;
+        font-weight: 700;
+        color: $color-palatte-item-color;
+
+        .colorPlatteNameWrapper {
+            .colorPalette__itemName--colorName {
+                font-weight: 700;
+                color: $color-palatte-colorName-color;
+            }
+
+            .colorPalette__itemName--color {
+                // color: #2e3438cc;
+                padding-top: 4px;
+                font-size: 14px;
+            }
+        }
+
+        &--colorName {}
+    }
+
+    &__itemcolor {
+        flex: 0 0 70%;
+        font-weight: 700;
+        color: $color-palatte-item-color;
+
+        &--colorCard {
+            display: flex;
+            flex-direction: column;
+
+            &-color {
+                height: 50px;
+                // background-color: red;
+                box-shadow: rgba(0, 0, 0, 0.10) 0 1px 3px 0;
+                border: 1px solid hsla(203, 50%, 30%, 0.15);
+                border-radius: 4px;
+                width: 100%;
+
+            }
+
+            &-colorCode {
+                text-align: center;
+                color: $color-palatte-item-color;
+                font-size: 12px;
+                padding-top: 6px;
+            }
+        }
+    }
+}
+
+.colorPlatteNameWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.primaryColor {
+    background-color: $primary-color;
+}
+
+.secondaryColor {
+    background-color: $secondary-color;
+}
+
+.neturalColor {
+    background-color: $dark-color;
+}
+
+.cloudColor {
+    background-color: $shade-color;
+}
+
+.lavaColor {
+    background-color: $text-color;
+}
+
+.ravenColor {
+    background-color: $subtletext-color;
+}
+
+.frozenColor {
+    background-color: $tertiary-color;
+}
+
+.smokeColor {
+    background-color: $smoke-color;
+}
+
+.clearColor {
+    background-color: $white-color;
+}
+
+.info-alert-color {
+    background-color: $info-color;
+}
+
+.error-alert-color {
+    background-color: $error-color;
+}
+
+.sucess-alert-color {
+    background-color: $success-color;
+}
+
+.warning-alert-color {
+    background-color: $warning-color;
+}
+
+.colorPaletteStatus {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 12px;
+
+    &__outline {
+        flex: 0 0 20%;
+        &--activeOutlineColor {
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            
+            .platteColorCode  {
+                color: $login-header-text-color !important;
+            }
+        }
+    }
+    &__text {
+        flex: 0 0 20%;
+        &--activeTextColor {
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: 400;
+            
+            .platteColorCode  {
+                color: $white-color !important;
+            }
+            .platteTitle {
+                color: $white-color !important;
+              }
+        }
+    }
+    &__background {
+        flex: 0 0 20%;
+        &--activeBackColor {
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: 400;
+            
+            .platteColorCode  {
+                color: $login-header-text-color !important;
+            }
+        }
+    }
+    &__statusName {
+        flex: 0 0 40%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+//status Chips//
+
+.info-active-chip-outline {
+    background-color: $status-active-outline-color;
+}
+
+.info-active-chip-text {
+    background-color: $status-active-text-color;
+}
+
+.info-active-chip-background {
+    background-color: $status-active-background-color;
+}
+
+.info-inactive-chip-outline {
+    background-color: $status-inactive-outline-color;
+}
+
+.info-inactive-chip-text {
+    background-color: $status-inactive-text-color;
+}
+
+.info-inactive-chip-background {
+    background-color: $status-inactive-background-color;
+}
+
+.info-complete-chip-outline {
+    background-color: $status-complete-outline-color;
+}
+
+.info-complete-chip-text {
+    background-color: $status-complete-text-color;
+}
+
+.info-complete-chip-background {
+    background-color: $status-complete-background-color;
+}
+
+.info-approved-chip-outline {
+    background-color: $status-approved-outline-color;
+}
+
+.info-approved-chip-text {
+    background-color: $status-approved-text-color;
+}
+
+.info-approved-chip-background {
+    background-color: $status-approved-background-color;
+}
+
+.info-rejected-chip-outline {
+    background-color: $status-rejected-outline-color;
+}
+
+.info-rejected-chip-text {
+    background-color: $status-rejected-text-color;
+}
+
+.info-rejected-chip-background {
+    background-color: $status-rejected-background-color;
+}
+
+.info-pending-chip-outline {
+    background-color: $status-pending-outline-color;
+}
+
+.info-pending-chip-text {
+    background-color: $status-pending-text-color;
+}
+
+.info-pending-chip-background {
+    background-color: $status-pending-background-color;
+}
+
+.info-onhold-chip-outline {
+    background-color: $status-onhold-outline-color;
+}
+
+.info-onhold-chip-text {
+    background-color: $status-onhold-text-color;
+}
+
+.info-onhold-chip-background {
+    background-color: $status-onhold-background-color;
+}
+
+.info-blacklisted-chip-outline {
+    background-color: $status-blacklisted-outline-color;
+}
+
+.info-blacklisted-chip-text {
+    background-color: $status-blacklisted-text-color;
+}
+
+.info-blacklisted-chip-background {
+    background-color: $status-blacklisted-background-color;
+}
+
+.info-confirmed-chip-outline {
+    background-color: $status-confirmed-outline-color;
+}
+
+.info-confirmed-chip-text {
+    background-color: $status-confirmed-text-color;
+}
+
+.info-confirmed-chip-background {
+    background-color: $status-confirmed-background-color;
+}
+
+.info-issued-chip-outline {
+    background-color: $status-issued-outline-color;
+}
+
+.info-issued-chip-text {
+    background-color: $status-issued-text-color;
+}
+
+.info-issued-chip-background {
+    background-color: $status-issued-background-color;
+}
+
+

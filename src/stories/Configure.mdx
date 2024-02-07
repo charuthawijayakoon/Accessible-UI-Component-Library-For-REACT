@@ -1,0 +1,590 @@
+import { Meta } from "@storybook/blocks";
+
+import Github from "./assets/github.svg";
+import Discord from "./assets/discord.svg";
+import Youtube from "./assets/youtube.svg";
+import Tutorials from "./assets/tutorials.svg";
+import Styling from "./assets/styling.png";
+import Context from "./assets/context.png";
+import Assets from "./assets/assets.png";
+import Docs from "./assets/docs.png";
+import Share from "./assets/share.png";
+import FigmaPlugin from "./assets/figma-plugin.png";
+import Testing from "./assets/testing.png";
+import Accessibility from "./assets/accessibility.png";
+import Theming from "./assets/theming.png";
+import AddonLibrary from "./assets/addon-library.png";
+
+export const RightArrow = () => (
+  <svg
+    viewBox="0 0 14 14"
+    width="8px"
+    height="14px"
+    style={{
+      marginLeft: "4px",
+      display: "inline-block",
+      shapeRendering: "inherit",
+      verticalAlign: "middle",
+      fill: "currentColor",
+      "path fill": "currentColor",
+    }}
+  >
+    <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+  </svg>
+);
+
+
+<Meta title="Welcome" />
+
+<div className="sb-container">
+<div className="sb-header-image-wrapper">
+
+<div className='sb-section-title'>
+    # Welcome to Universal UI Design System
+  </div>
+</div>
+  
+  <div className='sb-section-subTitle-desc'>
+  Welcome to the Design Guideline/System Guideline list for Universal UI.
+  </div>
+
+  <div className="sb-top-image">
+ 
+  </div>
+  <hr/>
+  <div className='sb-section-subTitle'>
+  Folder Structure
+  </div>
+  <div className='sb-section-subTitle-header'>
+  7-1 Architecture 
+  </div>
+  <div className='sb-section-subTitle-desc'>
+  The 7 - 1 pattern indicates that we create 7 folders and 1 main Sass file where we import all the files from these 7 folders.
+  </div>
+  
+  <div className='sb-architect-wrapper'>
+   <div className='sb-architect-text'>
+  <div className='sb-folder-section'>
+  <div className='sb-folder-section-text'>
+  Abstracts :
+  </div>
+  <div className='sb-folder-section-text-extra'>
+  Abstracts include things like global variables, functions and mixins. 
+  </div>
+  
+  </div>
+
+<div className="sb-folder-section">
+  <div className="sb-folder-section-text">
+  Vendors :
+  </div>
+  <div className="sb-folder-section-text-extra">
+    Vendors contain any third-party stylesheets the project uses.
+  </div>
+</div>
+
+<div className="sb-folder-section">
+  <div className="sb-folder-section-text">
+  Base :
+  </div>
+  <div className="sb-folder-section-text-extra">
+    Base contains boilerplate used throughout the entire project. This includes
+    project-wide typography styles and stylesheets that universally reset or
+    normalize default CSS.
+  </div>
+</div>
+
+<div className="sb-folder-section">
+  <div className="sb-folder-section-text">
+  Layout :
+  </div>
+  <div className="sb-folder-section-text-extra">
+    Layout contains styles for different aspects (ex: according to the language
+    aspects can handle left to right/ right to left layouts with XML
+    configurations) of the project’s structural layout (nav bars, headers,
+    footers and etc).
+  </div>
+</div>
+
+<div className="sb-folder-section">
+  <div className="sb-folder-section-text">
+  Components :
+  </div>
+  <div className="sb-folder-section-text-extra">
+    Components are like mini layouts. Styles for small, reusable pieces of the
+    project.
+  </div>
+</div>
+
+<div className="sb-folder-section">
+  <div className="sb-folder-section-text">
+  Pages :
+  </div>
+  <div className="sb-folder-section-text-extra">
+    Pages are where page-specific styles reside.
+  </div>
+</div>
+
+  <div className='sb-folder-section'>
+  <div className='sb-folder-section-text'>
+  Themes :
+  </div>
+   <div className='sb-folder-section-text-extra'>
+  Themes are used whenever a project has multiple themes based on the client (Client specific typography, images, languages and etc).
+  </div>
+  
+  </div>
+  </div>
+
+
+  </div>
+
+<hr />
+<div className='sb-section-subTitle'>
+  Naming Conversion
+  </div>
+{/* <div className="sb-section-subTitle">Naming Conversion</div> */}
+
+<div className="sb-folder-section">
+  <div className="sb-naming-section-text">
+  BEM :
+  </div>
+  <div className="sb-naming-section-text-extra">
+    BEM class names are meant to be straightforward and self-explanatory. Class
+    names are formatted as block__element__modifier (block double underscore
+    element double dash modifier).
+  </div>
+</div>
+
+
+<div className="sb-folder-section">
+  <div className="sb-naming-section-text">
+  Block :
+  </div>
+  <div className="sb-naming-section-text-extra">
+    Block can be thought of as the “container” or “parent” for its nested/ child
+    elements. It provides a clear connection between the block parts.
+  </div>
+</div>
+
+
+<div className="sb-folder-section">
+  <div className="sb-naming-section-text">
+  Element :
+  </div>
+  <div className="sb-naming-section-text-extra">
+    Element is a “child” of the block.
+  </div>
+</div>
+
+
+<div className="sb-folder-section">
+  <div className="sb-naming-section-text">
+  Modifiers :
+  </div>
+  <div className="sb-naming-section-text-extra">
+    Modifiers describe the change in appearance or behavior of the element.
+  </div>
+</div>
+
+
+<hr />
+<div className='sb-section-subTitle'>
+  UI Framework
+  </div>
+  <div className='sb-section-subTitle-header'>
+  MATERIAL-UI
+  </div>
+
+  <div className="sb-sample-text">
+  MATERIAL-UI is an open-source UI framework that features React components that implement Google’s Material Design.
+  </div>
+
+  <div>
+   <a href="https://mui.com/material-ui/">https://mui.com/material-ui/</a>
+  </div>
+
+  <div className="sb-sample-text">
+  The reason for selecting MATERIAL-UI is it has an active set of maintainers and a strong community behind it. It currently has over 54k stars on GitHub, making it one of the most popular component libraries out there and using it is borrowing from the Google design team’s wealth of knowledge of how consistent and easy-to-use interfaces should look.
+  </div>
+
+   <div className='sb-note-section'>
+  <div className='sb-note-section-text'>
+  Note:
+  </div>
+  There will be certain customizations in the UI framework to best fit into a more User Experience perspective.
+  </div>
+
+  <hr />
+<div className='sb-section-subTitle'>
+  Grid System
+  </div>
+
+   <div className='sb-section-subTitle-header'>
+  Material UI Grid System 
+  </div>
+
+  <div className="sb-sample-text">
+  The grid system adapts to screen size and orientation, ensuring consistency across layouts and especially use to ensure for maintaining dynamic forms layout across the project. 
+  </div>
+
+  <div>
+   <a href="https://mui.com/material-ui/react-grid/">https://mui.com/material-ui/react-grid/</a>
+  </div>
+
+  <div className='sb-section-subTitle-header'>
+  Custom Flex Grid using Flexbox 
+  </div>
+
+  <div className="sb-sample-text">
+  Flexbox is a one-dimensional layout system that we use to create a row or a column axis layout for internal blocks of the main layout. 
+  </div>
+
+  <div className='sb-section-subTitle-header'>
+  The Rules of the Grid 
+  </div>
+
+    <hr />
+<div className='sb-section-subTitle'>
+  Design System Documentation
+  </div>
+
+   <div className='sb-section-subTitle-header'>
+  Figma 
+  </div>
+
+    <div className="sb-sample-text">
+  Figma is used to maintain the design system that allows the team to share components to design, realize and develop the product. 
+  </div>
+
+  <div>
+   <a href="https://www.figma.com/file/P0P0Sb4D2hYITGqLHVYFBH/Universal-UI---Design-System?type=design&node-id=0%3A1&mode=design&t=0Sn4S27Z3cS9hFTq-1">https://www.figma.com/file/P0P0Sb4D2hYITGqLHVYFBH/Universal-UI---Design-System?type=design&node-id=0%3A1&mode=design&t=0Sn4S27Z3cS9hFTq-1 </a>
+  </div>
+
+      <hr />
+<div className='sb-section-subTitle'>
+  Iconography
+  </div>
+
+   <div className='sb-section-subTitle-header'>
+  Material Icons & Remix Icons 
+  </div>
+
+  <div className="sb-iconlib">
+  </div>
+
+  <div className="sb-sample-text">
+  “Material Icons” <a href="https://mui.com/material-ui/material-icons/ "> https://mui.com/material-ui/material-icons/ </a> use as the core icon library and “Remix Icons” <a href="https://remixicon.com/ "> https://remixicon.com/</a>   library use as the secondary icon library. The reason for selecting Remix Icons is unlike a patchwork icon library, 2200+ icons are all elaborately crafted. So that they are born with the gene of readability, consistency and perfect pixels. Each icon was designed in "Outlined" and "Filled" styles based on a 24x24 grid. 
+  </div>
+
+ 
+
+ 
+</div>
+
+
+<style>
+  {`
+  .sb-container {
+    margin-bottom: 48px;
+  }
+
+  .sb-header-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .sb-header-info {
+    margin-right: 12px;
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: unset;
+    }
+
+  }
+
+  .sb-note-section {
+    display:flex;
+    p {
+      font-size: 16px;
+      letter-spacing: 0.03em !important;
+    }
+  }
+
+  .sb-folder-section {
+    display:flex;
+  }
+
+  .sb-section-subTitle {
+    p {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+
+  .sb-section-subTitle-header {
+    p {
+     color: #005eb8;
+     font-size: 18px;
+    }
+  }
+
+  .sb-sample-text {
+    p {
+      font-size: 16px;
+      letter-spacing: 0.03em !important;
+      text-align: justify;
+    }
+  }
+
+  .sb-note-section-text {
+    margin-right: 6px; 
+    p {
+     color: #005eb8;
+     font-weight: 700;
+     font-size: 16px;
+     letter-spacing: 0.03em !important;
+    }
+  }
+
+  .sb-folder-section-text {
+    margin-right: 6px; 
+    flex: 0 0 25%;
+    p {
+     color: #005eb8;
+     font-weight: 700;
+      margin: 6px 0;
+      font-size: 16px;
+      letter-spacing: 0.03em !important;
+    }
+  }
+
+
+
+  .sb-architect-text {
+    flex: 0 0 60%;
+  }
+
+
+
+  .sb-top-image {
+        text-align: center;
+        img {
+          height: 300px;
+        }
+  }
+
+  .sb-mui-top-image {
+    text-align: center;
+        img {
+          height: 100px;
+          width: 100px;
+          object-fit: unset;
+        }
+  }
+  }
+
+  .sb-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .sb-section-title {
+    // margin-bottom: 32px;
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 800;
+    }
+  }
+
+  .sb-folder-section-text-extra {
+    flex: 0 0 75%;
+    p {
+      margin: 6px 0;
+          font-size: 16px;
+    letter-spacing: 0.03em !important;
+        text-align: justify;
+    }
+  }
+
+  .sb-section-subTitle-desc {
+    p {
+         font-size: 16px;
+    letter-spacing: 0.03em !important;
+        }
+  }
+
+  .sb-naming-section-text {
+        margin-right: 6px;
+    flex: 0 0 15%;
+    p {
+          margin: 6px 0;
+          color: #005eb8;
+     font-weight: 700;
+         font-size: 16px;
+    letter-spacing: 0.03em !important;
+        }
+  }
+
+  .sb-iconlib {
+        display: flex;
+    gap: 36px;
+    justify-content: center;
+  }
+
+  .sb-naming-section-text-extra {
+        flex: 0 0 85%;
+        p {
+          margin: 6px 0;
+          font-size: 16px;
+          text-align: justify;
+    letter-spacing: 0.03em !important;
+        }
+  }
+
+  .sb-section a:not(h1 a, h2 a, h3 a) {
+    font-size: 14px;
+  }
+
+  .sb-section-item, .sb-grid-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sb-section-item-heading {
+    padding-top: 20px !important;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+  }
+  .sb-section-item-paragraph {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .sb-chevron {
+    margin-left: 5px;
+  }
+
+  .sb-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 20px;
+  }
+
+  .sb-socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .sb-socials p {
+    margin-bottom: 10px;
+  }
+
+  .sb-explore-image {
+    max-height: 32px;
+    align-self: flex-start;
+  }
+
+  .sb-addon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #EEF3F8;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #EEF3F8;
+    height: 180px;
+    margin-bottom: 48px;
+    overflow: hidden;
+  }
+
+  .sb-addon-text {
+    padding-left: 48px;
+    max-width: 240px;
+  }
+
+  .sb-addon-text h4 {
+    padding-top: 0px;
+  }
+
+  .sb-addon-img {
+    position: absolute;
+    left: 345px;
+    top: 0;
+    height: 100%;
+    width: 200%;
+    overflow: hidden;
+  }
+
+  .sb-addon-img img {
+    width: 650px;
+    transform: rotate(-15deg);
+    margin-left: 40px;
+    margin-top: -72px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+    backface-visibility: hidden;
+  }
+
+  @media screen and (max-width: 800px) {
+    .sb-addon-img {
+      left: 300px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .sb-section {
+      flex-direction: column;
+    }
+
+    .sb-features-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sb-socials {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sb-addon {
+      height: 280px;
+      align-items: flex-start;
+      padding-top: 32px;
+      overflow: hidden;
+    }
+
+    .sb-addon-text {
+      padding-left: 24px;
+    }
+
+    .sb-addon-img {
+      right: 0;
+      left: 0;
+      top: 130px;
+      bottom: 0;
+      overflow: hidden;
+      height: auto;
+      width: 124%;
+    }
+
+    .sb-addon-img img {
+      width: 1200px;
+      transform: rotate(-12deg);
+      margin-left: 0;
+      margin-top: 48px;
+      margin-bottom: -40px;
+      margin-left: -24px;
+    }
+  }
+  `}
+</style>

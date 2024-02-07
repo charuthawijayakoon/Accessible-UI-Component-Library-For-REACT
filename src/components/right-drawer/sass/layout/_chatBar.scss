@@ -1,0 +1,189 @@
+.chatbar {
+    &__iconHolder {
+        
+        height: 56px;
+        border-bottom: 1px solid #EDEDED;
+        position: relative;
+
+        ul.MuiList-padding {
+            margin-top: 20px;
+
+            li.MuiListItem-gutters {
+                padding: 0 !important;
+                height: 55px !important;
+
+                .MuiListItemIcon-root {
+                    min-width: auto !important;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.MuiDrawer-paperAnchorRight:has(.chatbar__iconHolder) {
+    overflow: overlay;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #EDEDED;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #c1cbf1;
+        border: 1px solid #eae2e2;
+        border-radius: 8px;
+    }
+    & {
+        scrollbar-width: thin;
+        scrollbar-color: #eae2e2 #c1cbf1;
+    }
+}
+
+.rightshort {
+    .MuiList-root {
+        .MuiCollapse-root {
+            .MuiCollapse-wrapper {
+                .MuiCollapse-wrapperInner {
+                    .MuiList-root {
+                        .MuiButtonBase-root {
+                            padding-left: 16px !important;
+                            .MuiListItemIcon-root {
+                                // min-width: unset !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.rightshort {
+    .MuiListItemIcon-root {
+        min-width: unset !important;
+    }
+    .chatbar__icon:nth-child(1) {
+        // margin-top: 10px;
+        
+    }
+    .chatbar__icon:nth-child(2) {
+        margin-top: 24px;
+        color: #005EB8 !important;
+        .MuiIconButton-label {
+            .MuiSvgIcon-root {
+                color: #005EB8 !important;
+            }
+        }
+    }
+    .expandIconRight {
+        width: 100%;
+        margin-top: 16px;
+        color: #005EB8 !important;
+        .MuiIconButton-label {
+            .MuiSvgIcon-root {
+                color: #005EB8 !important;
+            }
+        }
+    }
+    .expandIconRight:hover {
+        height: 40px; 
+        width: 40px; 
+        margin-left: 10px;
+    }
+
+    .expandIconTop:hover {
+        height: 40px; 
+        width: 40px; 
+        margin-left: 10px;
+    }
+    .expandIconTop {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+}
+
+.manageShortCard {
+    margin-top: 24px;
+    .MuiPaper-root {
+        margin-bottom: 8px;
+        // background-color: #FAFAFA;
+        border: 1px solid #D9D9D9;
+        box-shadow: unset;
+        border-radius: 4px;
+        background-color: #FAFAFA;
+        .MuiButtonBase-root {
+            
+            .MuiAccordionSummary-content {
+                .MuiTypography-root {
+                    margin-left: 16px;
+                }
+            }
+        }
+        .MuiCollapse-root {
+            .MuiCollapse-wrapper {
+                .MuiCollapse-wrapperInner {
+                    .MuiAccordionDetails-root {
+                        .MuiList-root  {
+                            max-width: unset !important;
+                            .selectedListRow {
+                                //background-color: $iconHover-color !important;
+                            }
+                            .selectedListRow:hover {
+                                //background-color: $iconHover-color !important;
+                            }
+                            .MuiListItem-root {
+                                margin: 4px 0 !important;
+                                .MuiListItemSecondaryAction-root {
+                                    .MuiButtonBase-root {
+                                        background-color: unset !important;
+                                    }
+                                    .MuiButtonBase-root:hover {
+                                        background-color: unset !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Uui-shortcutKey {
+    margin-left: 6px !important;
+    //background-color: $shortcutkey-color !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    padding: 2px 16px !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+// .Uui-shortcutKeyClick {
+//     color: white;
+// }
+
+.Uui-txt--primary {
+    color: #005EB8 !important;
+}
+
+.Uui-rightDrawer{
+    width: 60px !important;
+    flex-shrink: 0;
+}
+
+.Uui-rightDrawerPaper{
+    width: 60px !important;
+}

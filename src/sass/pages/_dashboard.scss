@@ -1,0 +1,131 @@
+.welcome_card {
+    // width: 100%;
+    min-height: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    //background: linear-gradient(87deg, #084C8C 35.42%, #FB5A8D 100%);
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+    margin-top: 46px;
+    margin-bottom: 52px;
+
+    @include respond-to("small") {
+        padding: 12px 45px;
+        gap: 24px;
+    }
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.card_image_left {
+    position: absolute;
+    margin-left: -60px;
+}
+
+.card_image_right {
+    position: absolute;
+    right: 8%;
+}
+
+// ...............................................................................
+
+.Dash--card {
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+    color: #1C1B20;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer;
+
+    .chart-btn {
+        color: #1A2A68;
+    }
+
+    &:hover {
+        transition: all 1s ease-out;
+        box-shadow: 0px 4px 4px rgba(38, 38, 38, 0.2);
+        background-color: rgb(101, 113, 220);
+        color: #FFF;
+
+        .Uui-DashCard--color--val {
+            color: #FFF;
+        }
+
+        .Uui-txt-lite{
+            color: #FFF;
+        }
+
+        .chart-btn {
+            color: #FFF;
+        }
+    }
+
+}
+
+.Dash-header {
+    margin-bottom: 32px;
+}
+
+.Dash-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-carousel{
+    width: 100%;
+}
+
+
+// ..................................................
+
+.dash-container{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    .MuiGrid-root {
+        width: 100%;
+    }
+}
+
+.gwp-container{
+    padding: 0 12px;
+    margin-bottom: 40px;
+}
+
+.gwp-card{
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.gwp-header {
+    margin-bottom: 24px;
+}
+
+.gwp-chart{
+    width: 100%;
+}

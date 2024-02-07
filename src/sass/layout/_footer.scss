@@ -1,0 +1,18 @@
+.footerCard{
+
+    @include respond-to("small") {
+        padding: 0;
+      
+    }
+    text-align: center;
+    padding: 0 12px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: $subtletext-color;
+
+        margin: 0px -24px -24px -24px !important;
+   
+}

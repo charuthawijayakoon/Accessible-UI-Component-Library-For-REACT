@@ -1,0 +1,13 @@
+.Uui-advSearch {
+    &__body {
+        .MuiPopover-paper {
+            padding: 16px;
+            min-width: 875px;
+        }
+        
+    }
+    &--multiCards {
+        margin-bottom: 0 !important;
+    }
+}
+

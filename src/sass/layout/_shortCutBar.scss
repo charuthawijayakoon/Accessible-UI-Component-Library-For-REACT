@@ -1,0 +1,20 @@
+.chatbar {
+  &__iconHolderList {
+    padding-top: 42px;
+  }
+
+  &__iconColor {
+    color: #005eb8 !important;
+    font-size: 24px !important;
+  }
+
+  &__iconBackground {
+    font-size: 24px !important;
+    background-color: #ededed !important;
+    border-radius: 28px !important;
+    padding: 4px !important;
+    color: #747570 !important;
+    box-sizing: border-box !important;
+    height: 32px !important;
+  }
+}

@@ -1,0 +1,352 @@
+.formCard {
+  padding: 40px;
+
+  &__title {
+    font-weight: 700 !important;
+
+    &--spacing-btm {
+      margin-bottom: 24px;
+    }
+
+    &--spacing {
+      margin: 24px 0;
+    }
+  }
+
+  &__buttonRow {
+    &>button {
+      margin-right: 16px;
+    }
+
+    &--spacing {
+      text-align: right;
+      margin-top: 24px;
+
+      &> :not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__create {
+    margin-bottom: 24px;
+
+    &__container {
+      display: flex;
+      gap: 16px;
+    }
+
+    &__buttonRow {
+      text-align: right !important;
+    }
+  }
+
+  &__divider {
+    &--spacing-btm {
+      margin-bottom: 24px;
+    }
+
+    &--spacing-top {
+      margin-top: 24px;
+    }
+
+    &--spacing {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__row {
+    &:last-child .formCard__item:last-child {
+      margin-bottom: 0;
+    }
+
+    @include respond-to("small") {
+      display: flex;
+      gap: 16px;
+
+      &:last-child .formCard__item {
+        margin-bottom: 0;
+      }
+    }
+
+    &--flex-reverse {
+      @include respond-to("small") {
+        display: flex;
+        flex-direction: row;
+      }
+
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &--drawer {
+      &:last-child .formCard__item:last-child {
+        margin-bottom: 0;
+      }
+
+      @include respond-to("medium") {
+        display: flex;
+        gap: 16px;
+
+        &:last-child .formCard__item {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__item {
+    width: 100%;
+    margin-bottom: 24px;
+
+    &>div {
+      width: 100%;
+    }
+
+    &--flexend {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &--flexcenter {
+      display: flex !important;
+      justify-content: center !important;
+    }
+
+    &--flex {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+    }
+
+    &--oneThird {
+      width: 34%;
+
+      &>div {
+        width: 100%;
+      }
+    }
+
+    &--twoThird {
+      width: 66%;
+
+      &>div {
+        width: 100%;
+      }
+    }
+
+    &--relative {
+      position: relative;
+      padding-bottom: 40px;
+    }
+
+    &--textcenter {
+      text-align: center;
+    }
+  }
+}
+
+.multiFormContainer {
+  &>div:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.MuiTimeline-root {
+  flex-grow: unset !important;
+  width: 100%;
+
+  .MuiTimelineItem-root {
+    padding-bottom: 40px;
+
+    .formCard__column {
+      flex: 1 0 !important;
+
+      .MuiGrid-container {
+        align-items: center;
+      }
+    }
+
+    .MuiTimelineOppositeContent-root {
+      flex: unset !important;
+    }
+  }
+}
+
+.colorPalte {
+  width: 100%;
+}
+
+.componentCard {
+  margin: 12px 12px;
+  // height: 100vh;
+  padding: 44px 32px;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  &__subHeader {
+    font-size: 20px;
+    font-weight: 700;
+    color: #474842;
+    margin: 36px 0 24px 0;
+  }
+
+  &__phara {
+    padding: 14px 0;
+  }
+}
+
+.componentList {
+  list-style-type: disc;
+  line-height: 1.4;
+  padding: 0 20px;
+}
+
+.componentListDiv {
+  padding-bottom: 32px;
+}
+
+.buttonGap {
+  margin-right: 12px !important;
+}
+
+.uploadBox {
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 22px 24px;
+  display: flex;
+  gap: 32px;
+  background-color: $smoke-color;
+  font-size: 24px;
+  color: $primary-color;
+
+  &__bodyContent {
+    display: flex;
+    gap: 124px;
+
+    &--text {
+      &-mainHeading {
+        color: $login-header-text-color !important;
+      }
+    }
+
+    &--icons {
+      color: $tertiary-color !important;
+      display: flex !important;
+      gap: 8px !important;
+    }
+  }
+}
+
+.upload_ithemFlex {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px;
+}
+
+.uploadBox:hover {
+  box-shadow: 0px 4px 4px 0px #00000040 !important;
+  background-color: rgba(249, 249, 249, 1);
+}
+
+.buttonTop {
+  padding-top: 16px;
+
+  &__title {
+    color: $subtletext-color;
+  }
+}
+
+.accordionDiv {
+  margin: 12px 0;
+}
+
+.modalsTop {
+  padding-top: 44px;
+}
+
+.formMargin {
+  margin-bottom: 24px;
+}
+
+////////////////////////////////////////////new forms///////////////////////////////
+
+.inputs {
+  padding-top: 24px;
+}
+
+.container {
+  padding-top: 24px;
+}
+
+.formsTxt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.texts_spacing {
+  padding-top: 24px;
+}
+
+.dividerRule {
+  padding: 12px 0 12px 0;
+}
+
+.signatureHeading {
+  padding: 8px 0 8px 0;
+}
+
+.inputSpacing {
+  padding: 0 0 24px 0;
+}
+
+.titleCardContent {
+  padding: 36px;
+
+  @include respond-to("x-large") {
+    padding: 56px;
+  }
+}
+
+.iit {
+  &__flex {
+    display: flex;
+
+  }
+
+  &__flex-direction-row {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+  }
+
+  &__flex-direction-column {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+  }
+
+  &__item {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+
+  &__item--center {
+    align-items: center;
+  }
+
+  &__item--justify--center {
+    justify-content: center;
+  }
+
+
+}

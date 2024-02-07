@@ -1,0 +1,463 @@
+@import 'icon-variables';
+
+
+body,
+* {
+    // color: $dark-color;
+    font-family: $secondary_font !important;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: normal !important;
+}
+
+a {
+    color: $primary-color !important;
+}
+
+.Uui-txt--primary {
+    color: $primary-color !important;
+}
+
+.Uui-txt--secondary {
+    color: $secondary-color !important;
+}
+
+.Uui-txt-dark {
+    color: $dark-color;
+}
+
+.Uui-txt-text {
+    color: $text-color;
+}
+
+.Uui-txt-headText {
+    color: $subtletext-color;
+}
+
+.Uui-txt-subtletext {
+    color: $subtletext-color;
+    font-size: 0.8rem !important;
+}
+
+.Uui-txt-tableText {
+    color: '#474842';
+    font-size: 0.9rem !important;
+}
+
+.Uui-txt-subtletext2 {
+    color: $subtletext-color;
+}
+
+.Uui-txt-success {
+    color: $success-color !important;
+}
+
+.Uui-txt-error {
+    color: $error-color !important;
+}
+
+.Uui-txt-white {
+    color: $white-color !important;
+}
+
+.Uui-txt-iris {
+    color: $iris-color !important;
+}
+
+.Uui-txt-iris-light {
+    color: $iris-light-color !important;
+}
+
+.Uui-txt-violin {
+    color: $violin-color !important;
+}
+
+
+//Sizes
+.Uui-display-text {
+    font-size: 4.5rem !important;
+    line-height: 6.75rem !important;
+    letter-spacing: -0.125rem !important;
+    font-weight: 700 !important;
+}
+
+.Uui-heading1-text {
+    font-size: 3.75rem !important;
+    line-height: 5.625rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 700 !important;
+}
+
+.Uui-heading2-text {
+    font-size: 3rem !important;
+    line-height: 4.5rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 700 !important;
+}
+
+.Uui-heading3-text {
+    font-size: 2.5rem !important;
+    line-height: 3.75rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 700 !important;
+}
+
+.Uui-heading4-text {
+    font-size: 2rem !important;
+    line-height: 2.625rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 700 !important;
+}
+
+.Uui-heading5-text {
+    font-size: 1.75rem !important;
+    line-height: 2.625rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 700 !important;
+}
+
+.Uui-heading6-text {
+    font-size: 1.5rem !important;
+    line-height: 2.25rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 700 !important;
+}
+
+.Uui-body-text-large {
+    font-size: 1.125rem !important;
+    line-height: 1.688rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 400 !important;
+}
+
+.Uui-body-text-medium {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 400 !important;
+}
+
+.Uui-body-text-mediumBold {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    letter-spacing: 0.125rem !important;
+    font-weight: 600 !important;
+}
+
+.Uui-body-text-small {
+    font-size: 0.875rem !important;
+    line-height: 1.313rem !important;
+    letter-spacing: 0.25rem !important;
+    font-weight: 400 !important;
+}
+
+.Uui-body-text-smallBold {
+    font-size: 0.875rem !important;
+    line-height: 1.5rem !important;
+    letter-spacing: 0.25rem !important;
+    font-weight: 600 !important;
+}
+
+.Uui-txt-title {
+    font-size: 64px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+}
+
+.Uui-txt-header2--responsive {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+
+    @include respond-to("x-large") {
+        font-size: 40px !important;
+    }
+
+    @include respond-to("small") {
+        font-size: 32px !important;
+    }
+}
+
+.Uui-txt-subtitle {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+.Uui-txt-lite {
+    font-weight: 400 !important;
+}
+
+.Uui-txt-regular {
+    font-weight: 500 !important;
+}
+
+.Uui-txt-bold {
+    font-weight: 600 !important;
+}
+
+.Uui-txt-bold--1 {
+    font-weight: 700 !important;
+}
+
+.Uui-txt-bold--2 {
+    font-weight: 800 !important;
+}
+
+
+.Uui-txt-bold--center {
+    font-weight: 600 !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Uui-txt-small {
+    color: $text-color;
+    font-size: 14px !important;
+}
+
+.Uui-txt-xsmall {
+    font-size: 12px !important;
+}
+
+.Uui-txt-pretitle {
+    font-size: 10px !important;
+    text-transform: uppercase !important;
+    font-weight: 700;
+}
+
+.Uui-txt-button {
+    font-size: 14px !important;
+    letter-spacing: 0.03em !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    line-height: 16px !important;
+
+}
+
+.Uui-txt-small--responsive {
+    color: $text-color;
+    font-size: 12px !important;
+
+    @include respond-to("small") {
+        color: $text-color;
+        font-size: 14px !important;
+    }
+}
+
+.Uui-txt--underline {
+    text-decoration: underline;
+}
+
+.Uui-txt--line-through {
+    text-decoration: line-through;
+}
+
+.Uui-profile-name {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.Uui-header-second {
+    //color: $subtletext-color !important;
+    color: $gray-color-dark !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+}
+
+
+.MuiDataGrid-cell {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.Uui-txt-lite {
+    font-weight: 300 !important;
+    font-weight: 300 !important;
+    color: $white-color;
+    font-size: 14px;
+}
+
+.Uui-text-blue {
+    color: $login-header-text-color !important;
+}
+
+
+.breadcrumb-defalut {
+    color: $subtletext-color !important;
+}
+
+.breadcrumb-defalut:hover {
+    color: $primary-color !important;
+    text-decoration: none !important;
+}
+
+.breadcrumb-active {
+    color: $text-color !important;
+}
+
+.Uui-text-blue {
+    color: $primary-color-dark !important;
+}
+
+.Uui-color-palette {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.03px;
+    color: $dark-color !important;
+}
+
+////////////////////////////////////////////////new headers loging///////////////////////////////////
+.info-txt-subHeder {
+    font-size: 14px !important;
+    color: $loging-sub-header !important;
+    font-weight: 500 !important;
+}
+
+.info-txt-heder-loging {
+    font-size: 27px !important;
+    font-weight: 800 !important;
+    color: $header-text-color;
+}
+
+.info-txt-loing-footer {
+    color: $subtletext-color;
+    font-size: 0.8rem !important;
+}
+
+
+///Font//////
+
+.fontBoxWrapper {
+    display: flex;
+    background: linear-gradient(100deg, #EDE2FB 42.36%, rgba(154, 75, 255, 0.00) 102.99%);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 36px;
+    border-radius: 8px;
+
+    .fontBoxHeaderWrapper {
+        flex: 0 0 70%;
+    }
+
+    .fontBoxTextWrapper {
+        flex: 0 0 30%;
+    }
+}
+
+.Uui-font-header {
+    color: $login-header-text-color !important;
+    font-size: 64px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    letter-spacing: -1.28px !important;
+}
+
+.font-regular {
+    color: $login-header-text-color !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    letter-spacing: -0.48px !important;
+}
+
+.font-medium {
+    color: $login-header-text-color !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: normal !important;
+    letter-spacing: -0.48px !important;
+}
+
+.font-semiBold {
+    color: $login-header-text-color !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+    letter-spacing: -0.48px !important;
+}
+
+.font-Bold {
+    color: $login-header-text-color !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    letter-spacing: -0.48px !important;
+}
+
+.font-sampleText {
+    color: $login-header-text-color !important;
+    font-size: 10rem !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    letter-spacing: -3.2px !important;
+}
+
+.font-sampleBodyText {
+    color: $login-header-text-color !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    letter-spacing: 0.48px !important;
+}
+
+.font-scaleText {
+    color: $font-scale-color !important;
+    font-size: 15.2px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.384px !important;
+}
+
+.fontScaleBoxWrapper {
+    .fontScaleBox {
+        background-color: $shade-color;
+        display: flex;
+        align-items: center;
+        padding: 24px;
+
+        &__first {
+            flex: 0 0 30%;
+        }
+
+        &__second {
+            flex: 0 0 70%;
+        }
+    }
+}
+
+.lableHeadings {
+    color: $subtletext-color;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    padding-bottom: 16px;
+}
+
+.form-subHeading {
+    color: $subtletext-color;
+}
+
+.form-mainHeading {
+    font-weight: 600 !important;
+    color: $primary-color;
+}
+
+.Uui-body-text-xsmall {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+
+.Uui-txt-tileCard {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}

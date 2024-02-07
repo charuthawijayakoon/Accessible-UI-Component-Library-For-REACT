@@ -1,0 +1,190 @@
+.Uui-landingPage {
+    &__headerContainer {
+      padding: 0px;
+      @include respond-to("medium") {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      &--drawer {
+        padding: 24px;
+        @include respond-to("large") {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+        }
+      }
+    }
+
+    &__headerSubContainer {
+      text-align: center;
+
+      @include respond-to("small") {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+      }
+
+      &--drawer {
+        text-align: center;
+        @include respond-to("medium") {
+          display: flex;
+          gap: 15px;
+          align-items: flex-end;
+          justify-content: center;
+        }
+
+
+      }
+    }
+
+    &__searchContainer {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      @include respond-to("medium") {
+        width: inherit;
+        text-align: inherit;
+        margin-top: 0;
+      }
+
+      &--drawer {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        @include respond-to("large") {
+          width: inherit;
+          text-align: inherit;
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__card {
+      height: 100%;
+      padding: 24px !important;
+      width: 235px;
+
+      &-logo {
+        margin-bottom: 24px;
+      }
+
+      & div:first-child {
+        //height: 80%;
+        & svg {
+          margin-bottom: 13px;
+        }
+
+        & p {
+          margin-bottom: 8px;
+          margin-top: 12px;
+        }
+      }
+    }
+
+    &__card:hover {
+        cursor: pointer;
+        height: 100%;
+        padding: 24px !important;
+        background-color: $primary-color;
+        color: $white-color;
+
+  
+
+
+  
+        &-logo {
+          margin-bottom: 24px;
+        }
+        & div {
+            color: $white-color !important;
+        }
+
+        & svg {
+            color: $white-color !important;
+        }
+  
+        & div:first-child {
+          //height: 80%;
+          & svg {
+            margin-bottom: 13px;
+            color: $white-color !important;
+          }
+  
+          & p {
+            margin-bottom: 8px;
+            color: $white-color !important;
+          }
+        }
+      }
+
+
+    &__topBar{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+
+    }
+}
+
+.Uui-card-actions{
+    padding: 8px 0px !important;
+}
+
+.Uui-landingPage__card > .MuiCardContent-root {
+    padding: 0px !important;
+}
+.Uui-landingPage__card {
+
+  position: relative !important;
+  transition: all 0.3s ease-out !important;
+  text-decoration: none !important;
+
+    .Uui-txt-small{
+      color: #979797;
+      font-size: 14px !important;
+    }
+
+
+  &:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+      0 24px 46px var(--box-shadow-color);
+      
+      .Uui-landingPage__topBar svg.Uui-txt--primary{
+
+        color: #f6fba4 !important;
+      }
+
+
+      p.Uui-txt-small{
+        color: #979797 !important;
+        font-size: 14px !important;
+      }
+
+
+
+      .Uui-card-actions .Uui-txt--primary{
+
+       color :rgb(152, 230, 255) !important;
+      }
+  }
+}
+
+.hederLeftImage {
+  padding-left: 24px;
+}
+
+.landingCardDiv {
+  margin-top: 80px
+}
+
+.landingCardContentBar {
+  height: 80%;
+}
+
+
+

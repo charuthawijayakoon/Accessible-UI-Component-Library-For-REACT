@@ -1,0 +1,36 @@
+.Uui-treeview {
+    max-width: none !important;
+
+    &__node {
+      & > :first-child {
+        background-color: $smoke-color !important;
+        padding: 5px !important;
+        margin-bottom: 5px !important;
+      }
+
+      &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__title {
+        display: flex;
+        align-items: center;
+        min-width: 150px;
+        justify-content: space-between;
+        margin-left: 16px;
+      }
+    }
+
+    &__icon {
+      background-color: #323232;
+      color: white;
+    }
+
+    &__menu {
+      margin: 8px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }

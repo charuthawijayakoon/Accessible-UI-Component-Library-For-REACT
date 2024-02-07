@@ -1,0 +1,33 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:  $shade-color !important;
+    padding: 0 !important;
+}
+
+//spacing--*start
+.spacing-24{
+    height: 24px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+
+.css-194spiq {
+    background-color: $white-color !important;
+}
+//spacing--*end
+
+
+.info-loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
