@@ -808,7 +808,7 @@
     color: $light-shage-gray;
     p {
       color: $dark-color;
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   &__btn {
@@ -1408,12 +1408,12 @@
       &_lable {
         .MuiStepLabel-labelContainer {
           .Mui-active {
-            font-size: 16px;
+            font-size: 18px;
             color: $subtletext-color;
             font-weight: 500;
           }
           .Mui-disabled {
-            font-size: 16px;
+            font-size: 18px;
             color: $subtletext-color;
             font-weight: 400;
           }
@@ -1565,7 +1565,7 @@
   &__text {
     &--mainText {
       color: $login-header-text-color;
-      font-size: 16px !important;
+      font-size: 18px !important;
     }
 
     &--subText {
@@ -1659,7 +1659,7 @@
 .uploadBox {
   &__uploadMain-Text {
     color: $black-color;
-    font-size: 16px;
+    font-size: 18px;
   }
   &__uploadsub-Text {
     color: #747570;
